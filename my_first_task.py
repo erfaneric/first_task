@@ -1,4 +1,4 @@
-def task_1(nums):
+def task_1(nums)->int:
     count = 0
     for i in range(len(nums)):
         if(is_prime(nums[i])):
@@ -7,7 +7,7 @@ def task_1(nums):
             continue
     return count
 
-def is_prime(n):
+def is_prime(n)->bool:
     for i in range(2,(n//2)+1):
         if(n % i ==0):
             return False
